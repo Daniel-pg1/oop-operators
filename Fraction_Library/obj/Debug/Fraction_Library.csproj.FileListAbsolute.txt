@@ -1,0 +1,5 @@
+D:\вижуалка\программі\oop\Fraction_Library\bin\Debug\Fraction_Library.dll
+D:\вижуалка\программі\oop\Fraction_Library\bin\Debug\Fraction_Library.pdb
+D:\вижуалка\программі\oop\Fraction_Library\obj\Debug\Fraction_Library.csprojAssemblyReference.cache
+D:\вижуалка\программі\oop\Fraction_Library\obj\Debug\Fraction_Library.dll
+D:\вижуалка\программі\oop\Fraction_Library\obj\Debug\Fraction_Library.pdb

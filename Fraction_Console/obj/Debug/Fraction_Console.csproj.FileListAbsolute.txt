@@ -1,0 +1,9 @@
+D:\вижуалка\программі\oop\Fraction_Console\bin\Debug\Fraction_Console.exe.config
+D:\вижуалка\программі\oop\Fraction_Console\bin\Debug\Fraction_Console.exe
+D:\вижуалка\программі\oop\Fraction_Console\bin\Debug\Fraction_Console.pdb
+D:\вижуалка\программі\oop\Fraction_Console\bin\Debug\Fraction_Library.dll
+D:\вижуалка\программі\oop\Fraction_Console\bin\Debug\Fraction_Library.pdb
+D:\вижуалка\программі\oop\Fraction_Console\obj\Debug\Fraction_Console.csprojAssemblyReference.cache
+D:\вижуалка\программі\oop\Fraction_Console\obj\Debug\Fraction_Console.csproj.CopyComplete
+D:\вижуалка\программі\oop\Fraction_Console\obj\Debug\Fraction_Console.exe
+D:\вижуалка\программі\oop\Fraction_Console\obj\Debug\Fraction_Console.pdb
