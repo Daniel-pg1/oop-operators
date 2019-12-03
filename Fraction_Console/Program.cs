@@ -15,11 +15,11 @@ namespace Fraction_Console
             Fraction b = new Fraction(2,6);
             Fraction c = new Fraction(-3, 5);
             Fraction d;
-            Console.WriteLine($"a = {a},\nb ={b},\nc = {c}");
+            Console.WriteLine($"a = {a}\nb = {b}\nc = {c}");
             d = a + b - c;
             Console.WriteLine($"a + b -c = {d}");
-            d = (a * b + c - 10)/d;
-            Console.WriteLine($"(a * b + c - 10) / previous result = {d}");
+            d = (a * b + c - 10)/(d * 2);
+            Console.WriteLine($"(a * b + c - 10) / 2 * previous result = {d}");
             if (d > a)
             {
                 Console.WriteLine($"{d} is larger than {a}");

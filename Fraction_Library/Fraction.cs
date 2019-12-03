@@ -55,6 +55,22 @@ namespace Fraction_Library
             result.Simplify();
             return result;
         }
+        public static Fraction operator +(long c, Fraction a)
+        {
+            Fraction result;
+            Fraction b = new Fraction(c * a.Denominator, a.Denominator);
+            if (a.Denominator == b.Denominator)
+            {
+                result = new Fraction(a.Numerator + b.Numerator, a.Denominator);
+            }
+            else
+            {
+                result = new Fraction(a.Numerator * b.Denominator + b.Numerator * a.Denominator,
+                                        a.Denominator * b.Denominator);
+            }
+            result.Simplify();
+            return result;
+        }
         public static Fraction operator -(Fraction a)
         {
             return new Fraction(-a.Numerator, a.Denominator);
@@ -90,6 +106,22 @@ namespace Fraction_Library
             result.Simplify();
             return result;
         }
+        public static Fraction operator -(long c, Fraction a)
+        {
+            Fraction result;
+            Fraction b = new Fraction(c * a.Denominator, a.Denominator);
+            if (a.Denominator == b.Denominator)
+            {
+                result = new Fraction(a.Numerator - b.Numerator, a.Denominator);
+            }
+            else
+            {
+                result = new Fraction(a.Numerator * b.Denominator - b.Numerator * a.Denominator,
+                                        a.Denominator * b.Denominator);
+            }
+            result.Simplify();
+            return result;
+        }
         public static Fraction operator *(Fraction a, Fraction b)
         {
             Fraction result = new Fraction(a.Numerator * b.Denominator, a.Denominator * b.Numerator);
@@ -104,6 +136,13 @@ namespace Fraction_Library
             result.Fix();
             return result;
         }
+        public static Fraction operator *(long b, Fraction a)
+        {
+            Fraction result = new Fraction(a.Numerator * b, a.Denominator);
+            result.Simplify();
+            result.Fix();
+            return result;
+        }
         public static Fraction operator /(Fraction a, Fraction b)
         {
             Fraction result = a * !b;
@@ -112,6 +151,14 @@ namespace Fraction_Library
             return result;
         }
         public static Fraction operator /(Fraction a, long b)
+        {
+            Fraction c = new Fraction(b, 1);
+            Fraction result = a * !c;
+            result.Simplify();
+            result.Fix();
+            return result;
+        }
+        public static Fraction operator /(long b, Fraction a)
         {
             Fraction c = new Fraction(b, 1);
             Fraction result = a * !c;
@@ -184,7 +231,7 @@ namespace Fraction_Library
         }
         public void Fix()
         {
-            if ((Denominator <= 0 && Numerator <= 0) || (Denominator <= 0 && Numerator >= 0)) ;
+            if ((Denominator < 0 && Numerator < 0) || (Denominator < 0 && Numerator > 0)) 
             {
                 Numerator = -Numerator;
                 Denominator = -Denominator;
